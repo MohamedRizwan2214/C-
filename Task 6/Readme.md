@@ -1,0 +1,1 @@
+A delegate is a pointer to a method 
