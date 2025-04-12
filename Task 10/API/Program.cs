@@ -17,8 +17,9 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<BookContext>();
     db.Database.Migrate();
-
+    Console.Write("Database migrated successfully.");
     // Optional seed
+    
     // if (!db.Books.Any())
     // {
     //     db.Books.AddRange(
